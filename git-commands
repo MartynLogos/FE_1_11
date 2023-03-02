@@ -3,4 +3,5 @@
 3. git commit -m "message" - make your commit
 4. git push / git push origin HEAD - push your commit(s) to origin
 5. git pull - pull your new branches, update existing branches, etc
-
+6. git branch -d HW1 - delete branch localy.
+6. git branch -D HW1 - delete branch remotely.
