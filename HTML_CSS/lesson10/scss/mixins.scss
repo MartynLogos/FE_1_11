@@ -1,0 +1,7 @@
+@mixin shape($shape-width, $shape-height, $shape-color, $shape-border) {
+    width: $shape-width;
+    height: $shape-height;
+    background: $shape-color;
+    border: $shape-border
+    // border: 1px solid $shape-border-color;
+}

@@ -1,0 +1,28 @@
+header {
+    background: yellow;
+    flex-wrap: wrap;
+}
+
+.menu {
+    width: 100%;
+    display: none;
+}
+
+.menu ul {
+    flex-direction: column;
+}
+
+.menu ul li {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.menu-btn {
+    display: block;
+    cursor: pointer;
+}
+
+#toggler:checked+.menu{
+    display: block;
+}

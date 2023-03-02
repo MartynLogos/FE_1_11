@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 600px;
+    border: 1px solid black;
+    /* background: wheat; */
+}
+
+.header {
+    padding: 50px;
+    background: wheat;
+}
+
+.header_wrapper {
+    padding: 10px 50px;
+    background: lightcoral;
+}
+
+.header_content {
+    text-align: center;
+    padding: 5px 20px;
+    background: white;
+}
+
+.navbar {
+
+}
+
+.navbar_item {
+    width: 20%;
+    height: 100px;
+    float: left;
+}
+
+.item1 {
+    background: cyan;
+}
+
+.item2 {
+    background: rgb(1, 133, 177);
+}
+
+.item3 {
+    background: rgb(207, 176, 118);
+}
+
+.item4 {
+    background: rgb(242, 106, 129);
+}
+
+.item5 {
+    background: purple;
+}
+
+.main {
+    clear: both;
+}
+
+.main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main_block {
+    width: 33.333%;
+    height: 300px;
+    float: left;
+}
+
+.first {
+    background: green;
+}
+
+.first_header {
+    margin: 10px auto;
+    width: 70px;
+    height: 50px;
+    background: pink;
+}
+
+.first_content {
+    height: 230px;
+}
+
+.first_content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.first_content-header {
+    margin: 0 auto;
+    width: 50%;
+    height: 50px;
+    background: brown;
+}
+
+.first_content-main {
+    margin: 0 auto;
+    width: 50%;
+    height: 180px;
+}
+
+.first_content-main-block {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.first_content-main-block:first-child {
+    background: lightcoral;
+}
+
+.first_content-main-block:last-child {
+    background: yellowgreen;
+}
+
+
+.block {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.block img {
+    width: 100%;
+}
+
+.block::after {
+    width: 50px;
+    content: "";
+    color: white;
+    background: blue;
+    transition: 1s;
+    display: flex;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.block:hover::after {
+    background-color: blue;
+	width: 50px;
+	color: #fff;
+	font-size: 14px;
+    content: "Project";
+}
+
+
+/* 
+.block::after {
+    content: "Project";
+    display: block;
+    color: white;
+    background: blue;
+    transition: 1s;
+}
+
+.block img {
+    width: 50px;
+    position: relative;
+}
+
+.block:hover img {
+    background: blue;
+}
+.block:hover {
+    background: blue;
+    overflow: visible;
+} */
+
+
+/* img::after {
+    content: "Project";
+    display: block;
+    color: black;
+} */

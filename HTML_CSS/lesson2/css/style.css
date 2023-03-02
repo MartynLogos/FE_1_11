@@ -1,0 +1,52 @@
+/* * {
+    color: yellow
+} */
+
+/* h3 {
+    color: blue;
+}
+
+h4 {
+    color: blue;
+} */
+
+
+/* p {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.text-blue {
+    color: blue;
+} */
+
+.first {
+    color: blue;
+}
+
+.second {
+    font-weight: 900;
+}
+
+.first.second {
+    background: silver;
+}
+
+h1.first {
+    background: brown;
+}
+
+h1.first#some {
+    background: orange;
+}

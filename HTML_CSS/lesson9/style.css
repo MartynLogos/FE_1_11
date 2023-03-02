@@ -1,0 +1,190 @@
+
+.block {
+    margin: 100px;
+    width: 50px;
+    height: 50px;
+    background: green;
+    animation-name: block;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    /* animation-play-state: ; */
+    animation-play-state: running;
+    background-size: cover;
+}
+
+.block:hover {
+    animation-play-state: paused;
+}
+
+@keyframes block {
+    /*
+        from {}
+        to {}
+    */
+    0% {
+        
+    }
+    50% {
+        width: 500px;
+        background: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+    }
+
+    100% {
+        margin-left: 500px;
+        background: red;
+    }
+}
+
+.first {
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+.second {
+    animation-timing-function: ease;
+}
+.third {
+    animation-timing-function: ease-in;
+}
+.fourth {
+    animation-timing-function: ease-in-out;
+}
+.fiveth {
+    animation-timing-function: ease-out;
+}
+.sixth {
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+
+.car {
+    width: 50px;
+    animation-name: car;
+    animation-duration: 8s;
+}
+
+@keyframes car {
+    0% {
+        margin: 0;
+    }
+    12%{
+        transform: rotate(90deg);
+
+    }
+    25% {
+        margin-top: 0;
+        margin-left: 200px;
+    }
+    38%{
+        transform: rotate(180deg);
+    }
+    50%{
+        margin-left: 200px;
+        margin-top: 200px;
+    }
+    60%{
+        transform: rotate(270deg);
+    }
+    75% {
+        margin-left: 0;
+        margin-top: 200px;
+    }
+    84%{
+        transform: rotate(360deg);
+    }
+    100% {
+        margin: 0;
+        transform: rotate(360deg);
+    }
+}
+
+.person {
+    background: url('https://www.animatorisland.com/wp-content/uploads/2011/12/walk_simplified_all.png');
+    /* background: url('https://www.shutterstock.com/image-vector/man-runs-frame-motion-stick-260nw-1297273372.jpg'); */
+    /* width: 100px; */
+    /* height: 280px; */
+    width: 150px;
+    height: 356px;
+    animation: person 1s steps(4) infinite;
+}
+
+@keyframes person {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -600px;
+    }
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    border-top-color: black;
+    animation: loader 2s linear infinite;
+    /* animation-timing-function: cubic-bezier(0,1,0,1); */
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.title {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition: 1s;
+    flex-wrap: wrap;
+}
+
+.title:hover {
+    background: blue;
+    width: 120px;
+}
+.title:hover::after {
+    content: "project";
+}
+.title::after {
+    content: "";/*"" -> "project"*/
+    display: flex;
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.title img {
+    width: 50px;
+}
+
+.cart {
+    width: 100px;
+    height: 100px;
+    background: url('https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png') ;
+    background-size: cover;
+    position: relative;
+}
+
+.cart::after {
+    display: none;
+    width: 10px;
+    height: 10px;
+    content: "";
+    background: url('https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png');
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cart:hover::after {
+    display: block;
+}

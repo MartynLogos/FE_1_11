@@ -1,0 +1,106 @@
+@import './scss/pallete.scss';
+@import './scss/mixins.scss';
+
+
+body {
+    background: $bg-color;
+}
+
+.header-logo {
+    color: $text-color;
+}
+
+.title {
+    color: $text-color;
+}
+
+.block {
+    background: red;
+    width: calc(384px/768px) * 100%;
+}
+
+.circle {
+    @include shape(150px, 150px, _, 1px dotted yellow);
+    border-radius: 50%;
+}
+
+.square {
+    @include shape(200px, 200px, blue, 2px dashed gray);
+}
+
+.rectangle {
+    @include shape(300px, 200px, green, 2px solid orange);
+}
+
+
+.btn {
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.success {
+    @extend .btn;
+    background: lightgreen;
+}
+
+.danger {
+    @extend .btn;
+    background: darkred;
+}
+
+.danger-active {
+    background: red;
+}
+
+.users {
+    display: flex;
+
+    &_list {
+        background: red;
+    }
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .users-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .users-list-item {
+            width: 300px;
+            box-shadow: 0 0 6px 0 rgba(0,0,0,0.5);
+            color: white;
+
+            &__img {
+                width: 100%;
+            }
+
+            &__title {
+                margin-left: 10px;
+            }
+
+            &__title:hover ~ &__description {
+                
+            }
+
+            &__description {
+                margin: 0 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
