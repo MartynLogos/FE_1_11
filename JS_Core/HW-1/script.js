@@ -1,1 +1,3 @@
-console.log('this is my HW');
+alert('this is my HW');
+
+alert('second alert');
