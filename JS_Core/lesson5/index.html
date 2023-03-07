@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .list {
+                display: flex;
+                flex-direction: column;
+                /* list-style: none; */
+            }
+
+            .list-item {
+                color: green;
+            }
+
+            .error {
+                border: 1px solid red;
+            }
+
+            .green {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="block1">
+            text
+        </div>
+        <div class="block2">
+            <p>text</p>
+        </div>
+        <button id="btn" class="action-btn">Click</button> -->
+
+
+        <ol class="list">
+            <li class="list-item">first</li>
+            <li class="list-item">second</li>
+            <li class="list-item">third</li>
+        </ol>
+
+        <input type="text" class="field">
+
+        <button id="btn" onclick="addItem()" class="action-btn">Add</button>
+
+        <br />
+
+        <button onclick="removeItem()" class="remove-btn">Remove</button>
+
+
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cum dolore vitae quaerat eligendi exercitationem reprehenderit fugiat soluta harum! Tenetur voluptatem alias iure laudantium eaque doloribus reprehenderit officia nostrum distinctio.
+        </div>
+
+        <button onclick="addClass()" class="btn">Add Class</button>
+        <button onclick="removeClass()" class="btn">Remove Class</button>
+        <button onclick="toggleClass()" class="btn">Toggle Class</button>
+
+
+        <script src="./script.js"></script>
+    </body>
+</html>
