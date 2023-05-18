@@ -153,3 +153,8 @@ function sum(): never {
 // function sum(): void {
 //     console.log(1);
 // }
+
+// const btn = document.querySelector('.btn') as HTMLInputElement;
+// const btn = document.querySelector('.btn') as HTMLAnchorElement;
+
+// btn.href
